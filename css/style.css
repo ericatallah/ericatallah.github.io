@@ -1,0 +1,32 @@
+ body {
+   margin: 0;
+ }
+ 
+ header {
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding: 20px;
+ }
+
+ h1, h2 {
+   margin: 0;
+ }
+
+ #bio-image {
+   float: left;
+    margin-right: 10px;
+ }
+
+ #main-bio {
+   width: 75%;
+   float: left;
+ }
+
+ p {
+   margin-left: 10px;
+ }
+
+ #contact-info {
+   margin-top: 20px;
+ }
