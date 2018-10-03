@@ -1,9 +1,21 @@
  body {
     margin: 0;
     font-family: helvetica;
-    font-family: georgia;
-    font-family: "book antiqua";
+    font-family: "Comic Sans MS";
+    font-family: "Courier New";
  }
+
+ .comic-sans-ms {
+   font-family: "Comic Sans MS";
+ }
+
+ .helvetica {
+    font-family: helvetica;
+  }
+
+  .courier-new {
+    font-family: "Courier New";
+  }
  
  header {
    background-color: black;
