@@ -1,8 +1,199 @@
+/* start: global styles */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Pacifico&display=swap');
+
+* {
+  outline: none !important;
+  font-family: 'Roboto', 'Helvetica', 'Sans-serif';
+}
+
+html, body, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
 h1 {
-    font-size: 100px;
+  font-size: 3rem;
+  margin-bottom: 6rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5, p {
+  font-size: 1rem;
 }
 
 p {
-    color: green;
-    margin: 40px 0;
+  line-height: 2;
+  text-align: center;
+  color: #555
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+small {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+/* end: global styles */
+
+/* start: header styles */
+header .flex {
+  align-items: center;
+  padding: 2rem 0;
+}
+
+#logo {
+  font-weight: 700;
+  color: #000;
+  font-size: 3rem;
+  font-family: 'Lobster', cursive;
+}
+
+#logo:hover {
+  text-decoration: none;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #666;
+}
+/* end: header styles */
+
+/* start: hero styles */
+#hero {
+  padding: 10rem 0;
+  color: #fff;
+  background: url('../images/Heli_boarding_NZ.JPG') center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+#hero .hero-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+#hero .flex {
+  justify-content: space-around;
+}
+
+#hero h1 span {
+  font-size: 2.5rem;
+}
+
+#hero .hero-skill .fab {
+  display: block;
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+/* end: hero styles */
+
+/* start: skills styles */
+#skills {
+  padding: 4rem 0;
+  background: #999;
+}
+
+.skill-container {
+  width: 47%;
+}
+
+.skill-container h3 {
+  margin-top: 3rem;
+}
+
+.skill-container .skill-item {
+  margin-top: 1.25rem;
+}
+
+.skill-container .skill-item label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.skill-container .skill-item .progress-bar {
+  display: flex;
+}
+
+.skill-container .skill-item .progress-bar div {
+  height: 13px;
+}
+
+.skill-container.left h3, 
+.skill-container.left .skill-item {
+  text-align: right;
+}
+
+.skill-container.left .skill-item .progress-bar div {
+  background: #333;
+}
+
+.skill-container.left .skill-item .progress-bar div:first-child {
+  background: #ddd;
+}
+
+.skill-container.right .skill-item .progress-bar div {
+  background: rgba(1, 162, 166, 0.1);
+}
+
+.skill-container.right .skill-item .progress-bar div:first-child {
+  background: #01a2a6;
+}
+
+
+/* end: skills styles */
