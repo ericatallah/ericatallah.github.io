@@ -5,6 +5,7 @@
 * {
   outline: none !important;
   font-family: 'Roboto', 'Helvetica', 'Sans-serif';
+  transition: 0.3s;
 }
 
 html, body, p, ul {
@@ -24,7 +25,7 @@ h1 {
 
 h2 {
   font-size: 1.75rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -72,18 +73,36 @@ small {
   display: flex;
   justify-content: space-between;
 }
+
+.headline-p {
+  font-size: 1.15rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section:not(#hero) {
+  padding: 4rem 0;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
 /* end: global styles */
 
 /* start: header styles */
 header .flex {
   align-items: center;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 #logo {
   font-weight: 700;
   color: #000;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: 'Lobster', cursive;
 }
 
@@ -125,7 +144,7 @@ header nav ul li a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 #hero .flex {
@@ -144,9 +163,13 @@ header nav ul li a {
 /* end: hero styles */
 
 /* start: skills styles */
-#skills {
-  padding: 4rem 0;
-  background: #999;
+#my-skills {
+  background: #eee;
+}
+
+#my-skills .flex {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .skill-container {
@@ -194,6 +217,170 @@ header nav ul li a {
 .skill-container.right .skill-item .progress-bar div:first-child {
   background: #01a2a6;
 }
-
-
 /* end: skills styles */
+
+/* start: latest projects styles */
+#latest-projects .flex {
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#latest-projects .project-item {
+  position: relative;
+  height: 375px;
+  cursor: pointer;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#latest-projects .project-hover-container {
+  display: none;
+  opacity: 0;
+  position: relative;
+  z-index: 2;
+  top: 80%;
+  color: #fff;
+  text-align: center;
+  animation-duration: 0.75s;
+  animation-name: slideup;
+}
+
+#latest-projects .project-item:hover .fade {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+#latest-projects .project-item:hover .project-hover-container {
+  display: block;
+  opacity: 1;
+  top: 50%;
+  margin: -150px auto 0;
+}
+
+@keyframes slideup {
+  from {
+    opacity: 0;
+    top: 60%;
+    margin-top: 0;
+  }
+
+  to {
+    opacity: 1;
+    top: 50%;
+    margin-top: -150px;
+  }
+}
+
+#latest-projects .project-hover-container p {
+  color: #fff;
+  margin: 0 2rem;
+}
+
+#latest-projects .rounded-button {
+  display: block;
+  width: 150px;
+  margin: 2rem auto 0;
+  border-radius: 5px;
+  color: #fff;
+  border: 1px solid #fff;
+  background: transparent;
+  padding: 0.5rem 1rem;
+}
+
+#latest-projects .rounded-button:hover {
+  color: #000;
+  background: #fff;
+  text-decoration: none;
+}
+
+#yapper {
+  background-image: url('../images/yapper.jpg');
+  width: 50%;
+}
+
+#collections {
+  background-image: url('../images/collections-app.jpg');
+  width: 50%;
+}
+
+#flashcards {
+  background-image: url('../images/flashcards.jpg');
+  width: 33.33%;
+}
+
+#upventur {
+  background-image: url('../images/upventur.jpg');
+  width: 33.33%;
+}
+
+#app-2 {
+  background-image: url('../images/flashcards.jpg');
+  width: 33.33%;
+}
+/* end: latest projects styles */
+
+/* start: my resume styles */
+#my-resume .flex {
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.work-experience-item {
+  width: 37%;
+}
+
+.work-experience-item.icon {
+  width: 16%;
+}
+
+.work-experience-item.icon img {
+  width: 100%;
+}
+
+.work-experience-item.icon img.onclick {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.work-experience-item.icon img.price-spider {
+  background: #555;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.work-experience-item h3 {
+  margin-top: 0;
+}
+
+.vertical-bar {
+  width: 17px;
+  background: #01a2a6;
+  height: 150px;
+  margin: 1rem auto;
+}
+/* end: my resume styles */
+
+/* start: footer styles */
+footer {
+  padding: 6rem 0;
+  background: #000;
+  color: #fff;
+}
+
+small {
+  text-align: center;
+  margin: 2rem 0 0;
+  display: block;
+}
+/* end: footer styles */

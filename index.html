@@ -18,7 +18,7 @@
               <li><a href="#skills">Skills</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#resume">Resume</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="https://www.linkedin.com/in/ericatallah/" target="_blank">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -55,7 +55,7 @@
       <section id="my-skills">
         <div class="container">
           <h2>My skills</h2>
-          <p>With close to a decade of experience in web development, I have worked on projects of all shapes and sizes across many different industries.  Below are some of my skills.</p>
+          <p class="headline-p">I have a strong passion for coding, building applications, and learning new technologies.  Below are some of my skills and areas of expertise.</p>
           <div class="flex">
             <div class="skill-container left">
               <h3>Languages</h3>
@@ -119,12 +119,28 @@
               <h3>Libraries</h3>
 
               <div class="skill-item">
-                  <label>jQuery</label>
-                  <div class="progress-bar">
-                    <div style="width:10%;"></div>
-                    <div style="width:90%;"></div>
-                  </div>
+                <label>jQuery</label>
+                <div class="progress-bar">
+                  <div style="width:10%;"></div>
+                  <div style="width:90%;"></div>
                 </div>
+              </div>
+
+              <div class="skill-item">
+                <label>Font Awesome</label>
+                <div class="progress-bar">
+                  <div style="width:10%;"></div>
+                  <div style="width:90%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <label>Data-Driven Documents (D3.js)</label>
+                <div class="progress-bar">
+                  <div style="width:80%;"></div>
+                  <div style="width:20%;"></div>
+                </div>
+              </div>
             </div>
 
             <div class="skill-container right">
@@ -132,40 +148,40 @@
               <div class="skill-item">
                 <label>React</label>
                 <div class="progress-bar">
-                  <div style="width:20%;"></div>
                   <div style="width:80%;"></div>
+                  <div style="width:20%;"></div>
                 </div>
               </div>
               
               <div class="skill-item">
                 <label>Jest</label>
                 <div class="progress-bar">
-                  <div style="width:60%;"></div>
                   <div style="width:40%;"></div>
+                  <div style="width:60%;"></div>
                 </div>
               </div>
 
               <div class="skill-item">
                 <label>Mocha/Chai</label>
                 <div class="progress-bar">
-                  <div style="width:60%;"></div>
                   <div style="width:40%;"></div>
+                  <div style="width:60%;"></div>
                 </div>
               </div>
 
               <div class="skill-item">
                 <label>Express</label>
                 <div class="progress-bar">
-                  <div style="width:20%;"></div>
                   <div style="width:80%;"></div>
+                  <div style="width:20%;"></div>
                 </div>
               </div>
 
               <div class="skill-item">
                 <label>Webpack</label>
                 <div class="progress-bar">
-                  <div style="width:30%;"></div>
                   <div style="width:70%;"></div>
+                  <div style="width:30%;"></div>
                 </div>
               </div>
 
@@ -173,16 +189,16 @@
               <div class="skill-item">
                 <label>Mongoose</label>
                 <div class="progress-bar">
-                  <div style="width:40%;"></div>
                   <div style="width:60%;"></div>
+                  <div style="width:40%;"></div>
                 </div>
               </div>
 
               <div class="skill-item">
                 <label>Sequelize</label>
                <div class="progress-bar">
-                  <div style="width:40%;"></div>
                   <div style="width:60%;"></div>
+                  <div style="width:40%;"></div>
                 </div>
               </div>
 
@@ -198,8 +214,8 @@
               <div class="skill-item">
                 <label>Integration Tests</label>
                <div class="progress-bar">
-                  <div style="width:50%;"></div>
-                  <div style="width:50%;"></div>
+                  <div style="width:40%;"></div>
+                  <div style="width:60%;"></div>
                 </div>
               </div>
             </div>
@@ -208,46 +224,51 @@
       </section>
 
       <section id="latest-projects">
-        <h2>Check out some of my latest projects</h2>
-        <p>Below are some things I've been working on in my spare time to both learn new technologies, and keep my current skills sharp.</p>
+        <h2>Some of my latest work and pet projects</h2>
+        <p class="headline-p">Below are some of my latest work as well as some apps I've built in my spare time to both learn new technologies, and keep my coding skills sharp.</p>
         <div class="flex">
           <div id="yapper" class="project-item">
+            <div class="fade"></div>
             <div class="project-hover-container">
               <h3>Yapper</h3>
-              <p>A social media app I built similar to Twitter. Runs on the MERN stack.</p>
-              <a class="rounded-button" href="#yapper-url">See project</a>
+              <p>A social media app I built on the MERN stack.  Functionality-wise, it is very similar to Twitter. It supports full user authentication.</p>
+              <a class="rounded-button" href="#yapper-url" target="_blank">See project</a>
             </div>
           </div>
 
           <div id="collections" class="project-item">
+            <div class="fade"></div>
             <div class="project-hover-container">
-              <h3>Collections</h3>
-              <p>A social media app I built similar to Twitter.</p>
-              <a class="rounded-button" href="#yapper-url">See project</a>
+              <h3>Collection Organizer</h3>
+              <p>A very simple CRUD application to help organize a list of collections. In this instance, I used books in a personal library.</p>
+              <a class="rounded-button" href="https://collections-organizer.herokuapp.com/books" target="_blank">See project</a>
             </div>
           </div>
 
-          <div id="yapper" class="project-item">
+          <div id="flashcards" class="project-item">
+            <div class="fade"></div>
             <div class="project-hover-container">
               <h3>FlashCards</h3>
-              <p>A social media app I built similar to Twitter.</p>
-              <a class="rounded-button" href="#yapper-url">See project</a>
+              <p>A simple Node/Express flashcards application to assist with studying.  This was from an online tutorial.</p>
+              <a class="rounded-button" href="https://fathomless-brushlands-14888.herokuapp.com/" target="_blank">See project</a>
             </div>
           </div>
 
-          <div id="yapper" class="project-item">
+          <div id="upventur" class="project-item">
+            <div class="fade"></div>
             <div class="project-hover-container">
-              <h3>FlashCards</h3>
-              <p>A social media app I built similar to Twitter.</p>
-              <a class="rounded-button" href="#yapper-url">See project</a>
+              <h3>Upventur</h3>
+              <p>An outdoors/hiking/adventure blog and social media company.</p>
+              <a class="rounded-button" href="https://www.upventur.com/" target="_blank">See project</a>
             </div>
           </div>
 
-          <div id="yapper" class="project-item">
+          <div id="app-2" class="project-item">
+            <div class="fade"></div>
             <div class="project-hover-container">
-              <h3>FlashCards</h3>
-              <p>A social media app I built similar to Twitter.</p>
-              <a class="rounded-button" href="#yapper-url">See project</a>
+              <h3>Yapper</h3>
+              <p>A simple Node/Express flashcards application to assist with studying.  This was from an online tutorial.</p>
+              <a class="rounded-button" href="#yapper-url" target="_blank">See project</a>
             </div>
           </div>
         </div>
@@ -256,11 +277,13 @@
       <section id="my-resume">
         <div class="container">
           <h2>My Work Experience</h2>
-          <p>I've worked on web applications </p>
+          <p class="headline-p" style="max-width:767px;">With close to a decade of experience in web development, I've worked for enterprise level corporations such as 3M and Amazon.  I've consulted for large entertainment companies such as Disney, and real estate firms such as Xome, Long &amp; Foster, and Berkshire Hathaway Home Services.  I've freelanced for multiple clients in the hiking/outdoors space and education sector.  I've worked at a very fast paced start-up, and more recently taught a full stack web development bootcamp through the University of Washington.  I've worked on small dev teams and large dev teams, almost always in scrum environments.</p>
+          
           <div class="flex">
             <div class="work-experience-item align-right">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
             <div class="work-experience-item icon">
               <img src="https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/98/2014/09/07214435/Signature_Stacked_Purple_Hex.png" alt="University of Washington" />
+              <div class="vertical-bar"></div>
             </div>
             <div class="work-experience-item align-left">
               <h3>2018 - Present</h3>
@@ -272,14 +295,15 @@
               <h4>OnClick Web Design - Founder</h4>
             </div>
             <div class="work-experience-item icon">
-              <img src="https://media.licdn.com/dms/image/C560BAQGM_BHTJvPjzw/company-logo_400_400/0?e=1579132800&v=beta&t=qK-nHhJUwEfxkbpRniuX9tI1m_bZcGgjblKo5VoY7cM" alt="OnClick Web Design" />
+              <img class="onclick" src="https://media.licdn.com/dms/image/C560BAQGM_BHTJvPjzw/company-logo_400_400/0?e=1579132800&v=beta&t=qK-nHhJUwEfxkbpRniuX9tI1m_bZcGgjblKo5VoY7cM" alt="OnClick Web Design" />
+              <div class="vertical-bar"></div>
             </div>
             <div class="work-experience-item align-left">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
             
             <div class="work-experience-item align-right">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
             <div class="work-experience-item icon">
               <img src="https://media.licdn.com/dms/image/C4D0BAQF-_vJv6rmfIg/company-logo_400_400/0?e=1579132800&v=beta&t=Auvb0GqkMA1EM7M9T2rqCZLuFMt0hsjSezrbdRM9NQE" alt="Envestnet" />
-
+              <div class="vertical-bar"></div>
             </div>
             <div class="work-experience-item align-left">
               <h3>2017 - 2018</h3>
@@ -291,12 +315,16 @@
               <h4>Xome - Front-End Engineer</h4>
             </div>
             <div class="work-experience-item icon">
-              <img src="https://media.licdn.com/dms/image/C560BAQH98BJ_VOqnag/company-logo_400_400/0?e=1579132800&v=beta&t=0ipSPVDwcHUWA-lBT6getOziPsgFr2zAkQe2L0ztJV0" alt="Xome" /></div>
+              <img src="https://media.licdn.com/dms/image/C560BAQH98BJ_VOqnag/company-logo_400_400/0?e=1579132800&v=beta&t=0ipSPVDwcHUWA-lBT6getOziPsgFr2zAkQe2L0ztJV0" alt="Xome" />
+              <div class="vertical-bar"></div>
+            </div>
             <div class="work-experience-item align-left">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
 
             <div class="work-experience-item align-right">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
             <div class="work-experience-item icon">
-              <img src="https://content.wpspublish.com/images/thumbs/0008753.png" alt="Western Psychological Services" /></div>
+              <img src="https://content.wpspublish.com/images/thumbs/0008753.png" alt="Western Psychological Services" />
+              <div class="vertical-bar"></div>
+            </div>
             <div class="work-experience-item align-left">
               <h3>2013 - 2014</h3>
               <h4>Western Psychological Services - Front-End Engineer</h4>
@@ -307,13 +335,16 @@
               <h4>PriceSpider - Software Engineer</h4>
             </div>
             <div class="work-experience-item icon">
-              <img src="https://2fuwn52xitue3klkno29m1er-wpengine.netdna-ssl.com/wp-content/themes/pricespider/assets/img/logo/logo_pricespider.png" alt="PriceSpider" />
+              <img class="price-spider" src="https://2fuwn52xitue3klkno29m1er-wpengine.netdna-ssl.com/wp-content/themes/pricespider/assets/img/logo/logo_pricespider.png" alt="PriceSpider" />
+              <div class="vertical-bar"></div>
             </div>
             <div class="work-experience-item align-left">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
 
             <div class="work-experience-item align-right">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
             <div class="work-experience-item icon">
-              <img src="https://media.licdn.com/dms/image/C560BAQE-_wzVy9cxKA/company-logo_400_400/0?e=1579132800&v=beta&t=lz6XP_NMu0YxixjoE47e81EyHizB90-IyLXmlIt4BG8" alt="Accenture" /></div>
+              <img src="https://media.licdn.com/dms/image/C560BAQE-_wzVy9cxKA/company-logo_400_400/0?e=1579132800&v=beta&t=lz6XP_NMu0YxixjoE47e81EyHizB90-IyLXmlIt4BG8" alt="Accenture" />
+              <div class="vertical-bar"></div>
+            </div>
             <div class="work-experience-item align-left">
               <h3>2013 - 2014</h3>
               <h4>Accenture - Associate Software Engineer</h4>
@@ -324,7 +355,7 @@
       
       <footer>
         <small>&copy; 2019 Eric Atallah - All Rights Reserved</small>
-        <small><a href="#contact">Get in touch with me</a></small>
+        <small><a href="https://www.linkedin.com/in/ericatallah/" target="_blank">Get in touch with me</a></small>
       </footer>
     </div>
 
