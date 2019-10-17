@@ -338,6 +338,14 @@ header nav ul li a {
   width: 37%;
 }
 
+.work-experience-item.description {
+  line-height: 1.5;
+}
+
+.work-experience-item.title h4 {
+  font-style: italic;
+}
+
 .work-experience-item.icon {
   width: 16%;
 }
