@@ -364,8 +364,9 @@ header nav ul li a {
 }
 
 .vertical-bar {
-  width: 17px;
-  background: #01a2a6;
+  width: 3px;
+  /* background: #01a2a6; */
+  background: #111;
   height: 150px;
   margin: 1rem auto;
 }
